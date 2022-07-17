@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3059"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="sm_aiming_mechanism_body_C_error.svg">
+  <defs
+     id="defs3061" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.78965209"
+     inkscape:cx="46.314124"
+     inkscape:cy="576.83631"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1138"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3064">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="157.1794"
+       y="362.18481"
+       id="text3956"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3958"
+         x="157.1794"
+         y="362.18481" /></text>
+    <rect
+       style="opacity:0.98999999;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:1.36642575;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4965"
+       width="81.080307"
+       height="77.281158"
+       x="219.71338"
+       y="301.38257" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="177.86044"
+       y="408.45337"
+       id="text4075"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4077"
+         x="177.86044"
+         y="408.45337">Desired Orientation of Fca</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 260.04784,339.69646 36.77078,0"
+       id="path3081-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 260.04784,338.55338 0,-36.77078"
+       id="path3081-1-4"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.3983748;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5118-1"
+       sodipodi:cx="138.66867"
+       sodipodi:cy="421.0715"
+       sodipodi:rx="4.4323316"
+       sodipodi:ry="4.4323316"
+       d="m 143.101,421.0715 a 4.4323316,4.4323316 0 1 1 -8.86466,0 4.4323316,4.4323316 0 1 1 8.86466,0 z"
+       transform="translate(120.81687,-82.947916)" />
+    <g
+       id="g3972"
+       transform="translate(194.30902,9.2230311)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3960"
+         y="357.11929"
+         x="88.646637"
+         style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="357.11929"
+           x="88.646637"
+           id="tspan3962"
+           sodipodi:role="line">F</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3968"
+         y="358.38568"
+         x="101.31044"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="358.38568"
+           x="101.31044"
+           id="tspan3970"
+           sodipodi:role="line">CA</tspan></text>
+    </g>
+    <g
+       id="g5839"
+       transform="translate(-156.47266,-10.131044)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3081-9-3"
+         d="m 416.59134,349.8275 -36.77078,0"
+         style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3081-1-4-3"
+         d="m 416.59134,348.68442 0,-36.77078"
+         style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="translate(277.33733,-72.183688)"
+         d="m 143.101,421.0715 c 0,2.44791 -1.98442,4.43233 -4.43233,4.43233 -2.44791,0 -4.43233,-1.98442 -4.43233,-4.43233 0,-2.44791 1.98442,-4.43233 4.43233,-4.43233 2.44791,0 4.43233,1.98442 4.43233,4.43233 z"
+         sodipodi:ry="4.4323316"
+         sodipodi:rx="4.4323316"
+         sodipodi:cy="421.0715"
+         sodipodi:cx="138.66867"
+         id="path5118"
+         style="opacity:0.98999999;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.3983748;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <g
+         transform="translate(284.34448,-36.366667)"
+         id="g3972-3">
+        <text
+           xml:space="preserve"
+           style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="88.646637"
+           y="357.11929"
+           id="text3960-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3962-7"
+             x="88.646637"
+             y="357.11929">F</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="101.31044"
+           y="358.38568"
+           id="text3968-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3970-2"
+             x="101.31044"
+             y="358.38568">CB</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="opacity:0.98999999;fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:1.36642575;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4965-7"
+       width="81.080307"
+       height="77.281158"
+       x="447.85785"
+       y="303.03647" />
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 488.57771,340.96496 0,36.77078"
+       id="path3081-9-31"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 488.19232,340.20727 0,-36.77078"
+       id="path3081-1-4-9"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.3983748;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5118-1-8"
+       sodipodi:cx="138.66867"
+       sodipodi:cy="421.0715"
+       sodipodi:rx="4.4323316"
+       sodipodi:ry="4.4323316"
+       d="m 143.101,421.0715 a 4.4323316,4.4323316 0 1 1 -8.86466,0 4.4323316,4.4323316 0 1 1 8.86466,0 z"
+       transform="translate(348.96135,-81.294029)" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="511.1001"
+       y="367.99622"
+       id="text3960-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3962-0"
+         x="511.1001"
+         y="367.99622">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="523.76392"
+       y="369.2626"
+       id="text3968-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3970-8"
+         x="523.76392"
+         y="369.2626">CA</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 488.26316,341.35034 -36.77078,0"
+       id="path3081-9-3-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 491.87777,339.82187 36.77078,0"
+       id="path3081-1-4-3-2"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.3983748;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5118-4"
+       sodipodi:cx="138.66867"
+       sodipodi:cy="421.0715"
+       sodipodi:rx="4.4323316"
+       sodipodi:ry="4.4323316"
+       d="m 143.101,421.0715 a 4.4323316,4.4323316 0 1 1 -8.86466,0 4.4323316,4.4323316 0 1 1 8.86466,0 z"
+       transform="translate(349.00915,-80.660847)" />
+    <g
+       id="g3972-3-8"
+       transform="translate(356.0163,-44.843826)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3960-8-6"
+         y="357.11929"
+         x="88.646637"
+         style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="357.11929"
+           x="88.646637"
+           id="tspan3962-7-5"
+           sodipodi:role="line">F</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3968-4-0"
+         y="358.38568"
+         x="101.31044"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="358.38568"
+           x="101.31044"
+           id="tspan3970-2-9"
+           sodipodi:role="line">CB</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="411.3894"
+       y="407.72314"
+       id="text4075-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4077-0"
+         x="411.3894"
+         y="407.72314">Actual Orientation of Fca</tspan></text>
+  </g>
+</svg>

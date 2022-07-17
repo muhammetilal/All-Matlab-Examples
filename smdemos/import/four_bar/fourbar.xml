@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/20/14||14:50:25" using="SimMechanics Link Version 4.4" from="SolidWorks 22.0.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="fourbar" uid="fourbar" version="277">
+<AssemblyFile name="fourbar.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base-1" uid="base-1" grounded="true" entityUid="base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Bar1-1" uid="Bar1-1" entityUid="Bar1*:*Default">
+<Transform>
+<Rotation>0.1052926916019685 -0.99444127483487565 0 0.99444127483487565 0.1052926916019685 0 0 0 1</Rotation>
+<Translation>1.1051688687333792 0.15211761827556947 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Bar2-1" uid="Bar2-1" entityUid="Bar2*:*Default">
+<Transform>
+<Rotation>-0.87017561496118057 -0.49274171644679254 2.2492214980761317e-016 -0.49274171644679254 0.87017561496118057 -1.1159478183398126e-016 -1.4073436567983754e-016 -2.0793558407193945e-016 -1</Rotation>
+<Translation>1.1497737589013293 1.5545503063735653 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Bar3-1" uid="Bar3-1" entityUid="Bar3*:*Default">
+<Transform>
+<Rotation>-0.50000000000000122 0.86602540378443815 0 -0.86602540378443815 -0.50000000000000122 0 0 0 1</Rotation>
+<Translation>-0.97535999999999978 0.32157045407520524 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>1.0998199999999998 0.10160000151395798 -0.076200000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar1-1</Uid>
+</InstancePath>
+<Position>-0.050799999999999956 2.2204460492503131e-016 -0.091981536726414931</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar1-1</Uid>
+</InstancePath>
+<Position>1.4731999999999996 2.2204460492503131e-016 -0.012699999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar2-1</Uid>
+</InstancePath>
+<Position>-0.12700000000000022 1.1102230246251565e-016 -0.091981536726414959</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>-1.10236 0.10160000151395798 -0.076200000000000018</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar3-1</Uid>
+</InstancePath>
+<Position>0.254 2.2204460492503131e-016 -0.012699999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar2-1</Uid>
+</InstancePath>
+<Position>2.4130000000000003 -1.1102230246251565e-016 -0.012699999999999996</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bar3-1</Uid>
+</InstancePath>
+<Position>-0.050800000000000012 0 -0.091981536726414931</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bar3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Bar1" uid="Bar1*:*Default" version="479">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Bar1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>87.791065235476125</Mass>
+<CenterOfMass>0.66880241274298435 0 0</CenterOfMass>
+<Inertia>0.11321735564586327 15.086194729407509 15.086778050686462 3.9984732541381478e-010 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bar1_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+<Diffuse r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+<Specular r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Bar2" uid="Bar2*:*Default" version="537">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Bar2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>147.94631933334219</Mass>
+<CenterOfMass>1.1193508241535064 0 0</CenterOfMass>
+<Inertia>0.19059582293679136 71.680755498371852 71.680856659389164 6.0796713950993095e-010 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bar2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+<Diffuse r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+<Specular r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Bar3" uid="Bar3*:*Default" version="426">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Bar3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>16.235035467308808</Mass>
+<CenterOfMass>0.088596943572427117 0 0</CenterOfMass>
+<Inertia>0.021730930206375003 0.11647576413030757 0.11657693956456296 1.8132152355864502e-010 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bar3_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+<Diffuse r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+<Specular r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base" uid="base*:*Default" version="196">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>137.4003348297328</Mass>
+<CenterOfMass>-0.0077813265433721614 0.026749180387143984 -2.3762295924896202e-008</CenterOfMass>
+<Inertia>0.30413902528144648 62.348097237484197 62.128850011240758 9.3810648710263688e-008 -1.0853413561863917e-007 0.066902506635830333</Inertia>
+</MassProperties>
+<GeometryFile name="base_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+<Diffuse r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+<Specular r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

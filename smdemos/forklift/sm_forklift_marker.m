@@ -1,0 +1,30 @@
+% Setting the graphics type for all the contacts at forks to Marker type   
+
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point16',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point20',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point22',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point25',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point4',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point26',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point30',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point32',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point35',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point6',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point12',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point13',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point14',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point15',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point10',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point46',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point50',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point54',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point55',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point36',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point40',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point41',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point45',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point11',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point5',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point7',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point8',"GraphicType",'Marker');
+    set_param('sm_forklift/Forklift/Forks/Fork Contacts/Point9',"GraphicType",'Marker');

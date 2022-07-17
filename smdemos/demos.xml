@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demos xmlns:xi="http://www.w3.org/2001/XInclude">
+   <name>Simscape Multibody</name>
+   <type>simulink</type>
+   <icon>$toolbox/matlab/icons/simulinkicon.gif</icon>
+   <label>Simscape Multibody</label>
+   <description isCdata="no">
+       <p>Simscape Multibody&#8482; provides a multibody simulation environment for 3D mechanical systems, such as robots, vehicle suspensions, construction equipment, and aircraft landing gear. 
+       You model the multibody system using blocks representing bodies, joints, constraints, and force elements, and then Simscape Multibody formulates and solves the equations of motion for the complete mechanical system.  Models from CAD systems, including mass, inertia, joint, constraint, and 3D geometry, can be imported into Simscape Multibody. An automatically generated 3D animation lets you visualize the system dynamics. </p><p>
+       You can parameterize your models using MATLAB&#174; variables and expressions, and design control systems for your multibody system in Simulink&#174;.You can add electrical, hydraulic, pneumatic, and other components to your mechanical model using Simscape&#8482; and test them all in a single simulation environment. To deploy your models to other simulation environments, including hardware-in-the-loop (HIL) systems, Simscape Multibody supports C-code generation (with Simulink&#174; Coder&#8482;). </p>
+   </description>
+
+<demosection>
+  <label>Modeling Techniques</label>
+  <demosection>
+    <label>Simulink Comparison</label>
+    <demoitem>
+      <label>Single Pendulum in Simulink and Simscape Multibody</label>
+      <source>sm_single_pendulum_sl</source>
+      <thumbnail>html/sm_single_pendulum_sl_01.png</thumbnail>
+      <file>html/sm_single_pendulum_sl.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Double Pendulum in Simulink and Simscape Multibody</label>
+      <source>sm_double_pendulum_sl</source>
+      <thumbnail>html/sm_double_pendulum_sl_01.png</thumbnail>
+      <file>html/sm_double_pendulum_sl.html</file>
+      <type>model</type>
+    </demoitem>
+  </demosection>
+  <demosection>
+    <label>Bodies and Building Mechanisms</label>
+    <demoitem>
+      <label>Creating Frames Using Rigid Transforms</label>
+      <source>sm_frame_tree</source>
+      <file>html/sm_frame_tree.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Creating a Simple Part</label>
+      <source>sm_simple_body</source>
+      <file>html/sm_simple_body.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Creating a Complex Part</label>
+      <source>sm_compound_body</source>
+      <file>html/sm_compound_body.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Assembling Parts into a Double Pendulum</label>
+      <source>sm_double_pendulum</source>
+      <file>html/sm_double_pendulum.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Assembling Parts into a Four Bar Mechanism</label>
+      <source>sm_four_bar</source>
+      <file>html/sm_four_bar.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>How to Build a Model</label>
+      <source>sm_double_crank_aiming</source>
+      <file>double_crank_aiming/html/sm_double_crank_aiming.html</file>
+      <type>M-file</type>
+    </demoitem>
+    <demosection>
+      <label>Flexible Bodies</label>
+      <demoitem>
+        <label>Flexible Dipper Arm</label>
+        <source>sm_flexible_dipper_arm</source>
+        <file>flexible_dipper_arm/html/sm_flexible_dipper_arm.html</file>
+        <type>model</type>
+      </demoitem>
+    </demosection>
+  </demosection>
+  <demosection>
+    <label>Assemblies</label>
+    <demosection>
+      <label>Joints</label>
+      <demoitem>
+        <label>Using the Lead Screw Joint Block - Linear Actuator</label>
+        <source>sm_linear_actuator</source>
+        <file>linear_actuator/html/sm_linear_actuator.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Modeling Constant Velocity Joints - Power Take-Off Shaft</label>
+        <source>sm_pto_shaft</source>
+        <file>pto_shaft/html/sm_pto_shaft.html</file>
+        <type>model</type>
+      </demoitem>
+    </demosection>
+    <demosection>
+      <label>Constraints</label>
+      <demoitem>
+        <label>Using the Common Gear Block - Cardan Gear Mechanism</label>
+        <source>sm_cardan_gear</source>
+        <file>cardan_gear/html/sm_cardan_gear.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Using the Rack-Pinion Block - Windshield Wiper Mechanism</label>
+        <source>sm_windshield_wiper</source>
+        <file>windshield_wiper/html/sm_windshield_wiper.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Using the Worm and Gear Constraint Block - Solar Tracker</label>
+        <source>sm_solar_tracker</source>
+        <file>solar_tracker/html/sm_solar_tracker.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Using the Common Gear Block</label>
+        <source>sm_testrig_common_gear</source>
+        <thumbnail>html/sm_testrig_common_gear_thumbnail.png</thumbnail>
+        <file>common_gear/html/sm_testrig_common_gear.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Using the Point-On-Curve Block : Flapping Wing Mechanism</label>
+        <source>sm_cam_flapping_wing</source>
+        <file>cam_flapping_wing/html/sm_cam_flapping_wing.html</file>
+        <type>model</type>
+      </demoitem>
+    </demosection>
+    <demosection>
+      <label>Belt/Cable Pulley Systems</label>
+      <demoitem>
+        <label>Pulley Mechanism Right Angle Drive</label>
+        <source>sm_cable_drive_right_angle</source>
+        <thumbnail>html/sm_cable_drive_right_angle_thumbnail.png</thumbnail>
+        <file>drive_right_angle/html/sm_cable_drive_right_angle.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Block and Tackle with Four Pulleys</label>
+        <source>sm_cable_block_and_tackle</source>
+        <thumbnail>html/sm_cable_block_and_tackle_thumbnail.png</thumbnail>
+        <file>block_tackle/html/sm_cable_block_and_tackle.html</file>
+        <type>model</type>
+      </demoitem>
+      <demoitem>
+        <label>Cable-Driven XY Table with Cross Base</label>
+        <source>sm_cable_xytable_cross</source>
+        <thumbnail>html/sm_cable_xytable_cross_thumbnail.png</thumbnail>
+        <file>cable_xy_table/html/sm_cable_xytable_cross.html</file>
+        <type>model</type>
+      </demoitem>
+    </demosection>
+  </demosection>
+  <demosection>
+    <label>Dynamics</label>
+    <demoitem>
+      <label>Computing Actuator Torques Using Inverse Dynamics</label>
+      <source>sm_welding_robot</source>
+      <file>welding_robot/html/sm_welding_robot.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Sensing Composite Forces and Torques in Joints - Potter's Wheel</label>
+      <source>sm_potters_wheel</source>
+      <file>potters_wheel/html/sm_potters_wheel.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Modeling Self-Locking Worm and Gear Constraints - Worm Jack</label>
+      <source>sm_worm_jack</source>
+      <file>worm_jack/html/sm_worm_jack.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Lead Screw with Friction</label>
+      <source>sm_testrig_lead_screw_friction</source>
+      <thumbnail>html/sm_testrig_lead_screw_friction_thumbnail.png</thumbnail>
+      <file>leadscrew_friction/html/sm_testrig_lead_screw_friction.html</file>
+      <type>model</type>
+    </demoitem>
+  </demosection>
+  <demosection>
+    <label>Simscape Interfaces</label>
+    <demoitem>
+      <label>Rotational Interface : Electrically Operated Bread Slicer</label>
+      <source>sm_bread_slicer</source>
+      <file>bread_slicer/html/sm_bread_slicer.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Translational Interface : Radial Engine with Gas Force Model</label>
+      <source>sm_radial_engine</source>
+      <file>radial_engine/html/sm_radial_engine.html</file>
+      <type>model</type>
+    </demoitem>
+    <demoitem>
+      <label>Hydraulic Interface - Dump Trailer with Hydraulic Cylinder</label>
+      <source>sm_dump_trailer</source>
+      <file>dump_trailer/html/sm_dump_trailer.html</file>
+      <type>model</type>
+    </demoitem>
+  </demosection>
+</demosection>
+<demosection>
+  <label>Importing CAD Models</label>
+  <demoitem>
+    <label>Stewart Platform with Controller</label>
+    <source>sm_import_stewart_platform</source>
+    <file>import/stewart_platform/html/sm_import_stewart_platform.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Four Bar Mechanism Imported from a CAD Assembly</label>
+    <source>sm_import_four_bar</source>
+    <file>import/four_bar/html/sm_import_four_bar.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Modeling A Robot Using STEP Files</label>
+    <source>sm_import_robot_stepfiles</source>
+    <file>import/robot_stepfiles/html/sm_import_robot_stepfiles.html</file>
+    <type>model</type>
+  </demoitem>
+</demosection>
+<demosection>
+  <label>Importing URDF Models</label>
+  <demoitem>
+    <label>Humanoid Robot</label>
+    <source>sm_import_humanoid_urdf</source>
+    <file>import/humanoid_urdf/html/sm_import_humanoid_urdf.html</file>
+    <type>model</type>
+  </demoitem>
+</demosection>
+<demosection>
+  <label>Visualizing Multibody Systems</label>
+  <demoitem>
+    <label>Configuring Dynamic Cameras - Vehicle Slalom</label>
+    <source>sm_vehicle_slalom</source>
+    <file>vehicle_slalom/html/sm_vehicle_slalom.html</file>
+    <type>model</type>
+  </demoitem>
+</demosection>
+<demosection>
+  <label>Applications</label>
+  <demoitem>
+    <label>Airplane Wing Landing Gear</label>
+    <source>sm_wing_landing_gear</source>
+    <file>wing_landing_gear/html/sm_wing_landing_gear.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Inverted Double Pendulum on a Sliding Cart</label>
+    <source>sm_cart_double_pendulum</source>
+    <file>cart_double_pendulum/html/sm_cart_double_pendulum.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Stewart Platform</label>
+    <source>sm_stewart_platform</source>
+    <file>stewart_platform/html/sm_stewart_platform.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Pendulum Waves</label>
+    <source>sm_pendulum_waves</source>
+    <file>html/sm_pendulum_waves.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Double Wishbone Suspension</label>
+    <source>sm_double_wishbone_suspension</source>
+    <file>double_wishbone_suspension/html/sm_double_wishbone_suspension.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Independent Suspension System Templates</label>
+    <source>sm_suspension_templates</source>
+    <file>suspension_templates/html/sm_suspension_templates.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Backhoe</label>
+    <source>sm_backhoe</source>
+    <file>backhoe/html/sm_backhoe.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>3-Roll Robotic Wrist Mechanism</label>
+    <source>sm_robotic_wrist</source>
+    <file>robotic_wrist/html/sm_robotic_wrist.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Fairground Carousel Ride</label>
+    <source>sm_carousel</source>
+    <file>carousel/html/sm_carousel.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Cable Robot</label>
+    <source>sm_cable_robot</source>
+    <file>cable_robot/html/sm_cable_robot.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Tower Crane With Trolley and Hoist</label>
+    <source>sm_cable_tower_crane</source>
+    <thumbnail>html/sm_cable_tower_crane_thumbnail.png</thumbnail>
+    <file>tower_crane/html/sm_cable_tower_crane.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Sail Boat</label>
+    <source>sm_sailboat</source>
+    <file>sailboat/html/sm_sailboat.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Elevator</label>
+    <source>sm_cable_elevator</source>
+    <file>elevator/html/sm_cable_elevator.html</file>
+    <thumbnail>html/sm_cable_elevator_thumbnail.png</thumbnail>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Vehicle Dynamics - Car with Heave and Roll</label>
+    <source>sm_car_heave_roll</source>
+    <file>car_heave_roll/html/sm_car_heave_roll.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Full Vehicle on Four Post Testrig</label>
+    <source>sm_car_4post_testrig</source>
+    <file>car_4post_testrig/html/sm_car_4post_testrig.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Using the Spatial Contact Force Block - Bumper Car</label>
+    <source>sm_bumper_car</source>
+    <file>bumper_car/html/sm_bumper_car.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Cable Driven Space Manipulator</label>
+    <source>sm_cable_space_manipulator</source>
+    <thumbnail>html/sm_cable_space_manipulator_thumbnail.png</thumbnail>
+    <file>space_manipulator/html/sm_cable_space_manipulator.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Forklift</label>
+    <source>sm_forklift</source>
+    <thumbnail>html/sm_forklift_thumbnail.png</thumbnail>
+    <file>forklift/html/sm_forklift.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Pick and Place Robot Using Forward and Inverse Kinematics</label>
+    <source>sm_pick_and_place_robot</source>
+    <thumbnail>html/sm_pick_and_place_robot_thumbnail.png</thumbnail>
+    <file>pick_and_place_robot/html/sm_pick_and_place_robot.html</file>
+    <type>model</type>
+  </demoitem>
+  <demoitem>
+    <label>Package Delivery Quadcopter</label>
+    <source>sm_quadcopter</source>
+    <thumbnail>html/sm_quadcopter_thumbnail.png</thumbnail>
+    <file>quadcopter_package_delivery/html/sm_quadcopter.html</file>
+    <type>model</type>
+  </demoitem>
+</demosection>
+
+</demos>

@@ -1,0 +1,397 @@
+%% sm_cable_space_manipulator Parameters Initialization
+
+% Copyright 2019 The MathWorks, Inc.
+
+%% Simulation Parameters
+
+LinkSpring_K = 600; % N/m
+LinkSpring_D = 1000;  % N/(m/s)
+
+
+%% Link Assemblies
+LinkSolid.mass = 10;  % kg
+LinkSolid.CoM = [-0.039370027559553267 0.00079762794009566925 42.723105558341985];  % in
+LinkSolid.MoI = [10479.651222085493 10465.346944171919 147.01359310772546];  % kg*in^2
+LinkSolid.PoI = [3.1251224773382824 2.9099031161643656 -0.00031207943693159203];  % kg*in^2
+LinkSolid.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+LinkSolid.opacity = 1;
+
+LinkPulley.mass = 3;  % kg
+LinkPulley.CoM = [-7.5903612059002529e-06 -1.279324552745019e-07 -2.7532831610660695e-05];  % in
+LinkPulley.MoI = [0.16164114282184702 0.31909120724081236 0.16159499832739502];  % kg*in^2
+LinkPulley.PoI = [-5.0480839627259323e-08 -8.100663110611461e-07 -6.6515529252609113e-07];  % kg*in^2
+LinkPulley.color = [0.90196078431372551 0.90196078431372551 0.90196078431372551];
+LinkPulley.opacity = 1;
+
+PulleyClampSolid.mass = 3.5;  % kg
+PulleyClampSolid.CoM = [2.6999991454860388 0.13705482834942295 -0.49669663912350909];  % in
+PulleyClampSolid.MoI = [0.0047308553412892087 0.035222385764589359 0.030708643793704027];  % kg*in^2
+PulleyClampSolid.PoI = [-7.3199212413338873e-05 -1.1137066635024427e-09 2.2367885419062366e-10];  % kg*in^2
+PulleyClampSolid.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+PulleyClampSolid.opacity = 1;
+
+SlidingPulleyClamp.mass = 2;  % kg
+SlidingPulleyClamp.CoM = [2.7000001797475845 0.1265114101698846 -16.438461496478478];  % in
+SlidingPulleyClamp.MoI = [11.962038520515577 11.991524484974384 0.030417585497266138];  % kg*in^2
+SlidingPulleyClamp.PoI = [-0.002135335373781507 -2.0099544210062457e-07 -1.8189820710933944e-10];  % kg*in^2
+SlidingPulleyClamp.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+SlidingPulleyClamp.opacity = 1;
+
+SpreaderPulley.mass = 2;  % kg
+SpreaderPulley.CoM = [0 0 0.12499999999999999];  % in
+SpreaderPulley.MoI = [0.010804061818868045 0.010792851479881896 0.021355793815815427];  % kg*in^2
+SpreaderPulley.PoI = [0 0 0];  % kg*in^2
+SpreaderPulley.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+SpreaderPulley.opacity = 1;
+
+SinglePulleyClampSolid.mass = 1;  % kg
+SinglePulleyClampSolid.CoM = [2.6999988567532567 0.15493721974446348 -0.60256065736827735];  % in
+SinglePulleyClampSolid.MoI = [0.0043467002811144418 0.01027655502505778 0.0061933159315036091];  % kg*in^2
+SinglePulleyClampSolid.PoI = [-0.00018725848320606426 2.0598884358790075e-10 1.8984579535820757e-10];  % kg*in^2
+SinglePulleyClampSolid.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+SinglePulleyClampSolid.opacity = 1;
+
+%% 360 Joint System
+JointPlate1.mass = 2;  % kg
+JointPlate1.CoM = [3.4999999999999987 3.5799671042905645 0.3017575738352391];  % in
+JointPlate1.MoI = [2.291315571626618 2.0435857991226132 4.2639694725657469];  % kg*in^2
+JointPlate1.PoI = [0.072243322289548259 0 0];  % kg*in^2
+JointPlate1.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+JointPlate1.opacity = 1;
+
+LeftInnerJointPlate.mass = 2;  % kg
+LeftInnerJointPlate.CoM = [3.0000000000000009 3.0000000000000004 0.27039839104171709];  % in
+LeftInnerJointPlate.MoI = [1.1682530966390425 1.0272834107646693 2.1748846548005676];  % kg*in^2
+LeftInnerJointPlate.PoI = [0 0 0];  % kg*in^2
+LeftInnerJointPlate.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+LeftInnerJointPlate.opacity = 1;
+
+RightInnerJointPlate.mass = 2;  % kg
+RightInnerJointPlate.CoM = [2.9999999999999982 3.2291623589692446 0.28124371993651393];  % in
+RightInnerJointPlate.MoI = [1.3971665177095833 1.3248101211270495 2.6966341434740881];  % kg*in^2
+RightInnerJointPlate.PoI = [-0.012651140507559507 0 0];  % kg*in^2
+RightInnerJointPlate.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+RightInnerJointPlate.opacity = 1;
+
+SpreaderSupportSolid.mass = 2;  % kg
+SpreaderSupportSolid.CoM = [2.4999999999999978 4.4834415863367347 0.21687879694385048];  % in
+SpreaderSupportSolid.MoI = [7.1852472731331165 13.999046393814933 20.979232784309332];  % kg*in^2
+SpreaderSupportSolid.PoI = [0.0025438479791102058 0 0];  % kg*in^2
+SpreaderSupportSolid.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+SpreaderSupportSolid.opacity = 1;
+
+SpreaderSolid.mass = 5;  % kg
+SpreaderSolid.CoM = [1.9805786262751639 4.5000000000000053 0.37500000000000011];  % in
+SpreaderSolid.MoI = [828.66633411226826 53.946260774462168 882.44616904773943];  % kg*in^2
+SpreaderSolid.PoI = [0 0 0];  % kg*in^2
+SpreaderSolid.color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
+SpreaderSolid.opacity = 1;
+
+
+
+%% RigidTransforms
+
+smiData.RigidTransform(75).translation = [0.0 0.0 0.0];
+smiData.RigidTransform(75).angle = 0.0;
+smiData.RigidTransform(75).axis = [0.0 0.0 0.0];
+
+smiData.RigidTransform(1).translation = [2.2899999999999978 0.12499999999999717 -2.1498636836303575];  % in
+smiData.RigidTransform(1).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(1).axis = [0.57735026918962584 0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(2).translation = [1.5899999999999999 -30.630000000000003 0.37499999999998312];  % in
+smiData.RigidTransform(2).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(2).axis = [0.57735026918962584 0.57735026918962562 0.57735026918962595];
+
+smiData.RigidTransform(3).translation = [-0.024999999999997684 0.56466517216736622 0.22821106431307853];  % in
+smiData.RigidTransform(3).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(3).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(4).translation = [-1.4251729137104707e-14 -3.7470027081099033e-16 0.050000000000004263];  % in
+smiData.RigidTransform(4).angle = 1.1556761126931182e-16;  % rad
+smiData.RigidTransform(4).axis = [-0.35815479673470829 -0.93366222027878987 1.9322650512819415e-17];
+
+smiData.RigidTransform(5).translation = [5.4249999999999954 0.56466517216736622 0.22821106431307853];  % in
+smiData.RigidTransform(5).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(5).axis = [0.57735026918962584 0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(6).translation = [8.2121809352742048e-15 -1.1553258350005535e-14 0.050000000000004263];  % in
+smiData.RigidTransform(6).angle = 1.5281328664646686e-16;  % rad
+smiData.RigidTransform(6).axis = [-0.48176770200933322 0.87629896799017526 -3.2256786690891801e-17];
+
+smiData.RigidTransform(7).translation = [4.0500000000000007 0.25008323019539841 -0.24809371513717082];  % in
+smiData.RigidTransform(7).angle = 2.1454902064553742;  % rad
+smiData.RigidTransform(7).axis = [-0.59342605745164545 -0.59342605745164545 -0.54377479591720024];
+
+smiData.RigidTransform(8).translation = [-8.8817841970012523e-15 1.1809997424450103e-14 0.27187216588063784];  % in
+smiData.RigidTransform(8).angle = 3.1415926535897922;  % rad
+smiData.RigidTransform(8).axis = [1 -6.1472896285640772e-32 -1.5082422348007175e-16];
+
+smiData.RigidTransform(9).translation = [1.3499999999999974 0.2500832301954159 -0.24809371513717082];  % in
+smiData.RigidTransform(9).angle = 2.1454902064553751;  % rad
+smiData.RigidTransform(9).axis = [-0.59342605745164567 -0.59342605745164578 -0.54377479591719979];
+
+smiData.RigidTransform(10).translation = [-1.0475301182033547e-13 -4.6612177008811817e-13 -0.021872165880390499];  % in
+smiData.RigidTransform(10).angle = 6.395910570267235e-16;  % rad
+smiData.RigidTransform(10).axis = [-0.98945447343268755 -0.14484420942530979 4.5832056120211695e-17];
+
+smiData.RigidTransform(11).translation = [6.9999999999999902 39.630000000000017 0.37500000000001771];  % in
+smiData.RigidTransform(11).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(11).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(12).translation = [-2.2999999999999825 0.12499999999998401 -2.1498636836303899];  % in
+smiData.RigidTransform(12).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(12).axis = [0.57735026918962595 0.57735026918962584 0.57735026918962562];
+
+smiData.RigidTransform(13).translation = [5.4249999999999954 0.56466517216736622 0.22821106431307853];  % in
+smiData.RigidTransform(13).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(13).axis = [0.57735026918962584 0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(14).translation = [-3.4694469519536142e-17 -1.7486012637846216e-15 0.049999999999997172];  % in
+smiData.RigidTransform(14).angle = 4.7102773760513257e-16;  % rad
+smiData.RigidTransform(14).axis = [-0.26824193856954986 0.96335157777026026 -6.0859443767705619e-17];
+
+smiData.RigidTransform(15).translation = [-0.024999999999997684 0.56466517216737488 0.22821106431309601];  % in
+smiData.RigidTransform(15).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(15).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(16).translation = [4.3905851176972988e-15 7.3552275381416621e-16 0.05000000000000427];  % in
+smiData.RigidTransform(16).angle = 2.0014830212433612e-16;  % rad
+smiData.RigidTransform(16).axis = [0.70391443870658743 0.710284775973968 5.0035044966669598e-17];
+
+smiData.RigidTransform(17).translation = [1.3499999999999974 0.271872165881475 -0.25000000000001182];  % in
+smiData.RigidTransform(17).angle = 2.1454902064553738;  % rad
+smiData.RigidTransform(17).axis = [-0.59342605745164534 -0.59342605745164534 -0.54377479591720057];
+
+smiData.RigidTransform(18).translation = [-2.0893729451965815e-16 9.9355222700423103e-16 -1.9747353839958056e-15];  % in
+smiData.RigidTransform(18).angle = 9.6816975477523041e-16;  % rad
+smiData.RigidTransform(18).axis = [0.99152839613629984 0.12989010607192936 6.2345159952688192e-17];
+
+smiData.RigidTransform(19).translation = [4.0500000000000007 -5.1075792038139438 0.22064101083732054];  % in
+smiData.RigidTransform(19).angle = 2.1454902064553738;  % rad
+smiData.RigidTransform(19).axis = [-0.59342605745164534 -0.59342605745164534 -0.54377479591720057];
+
+smiData.RigidTransform(20).translation = [-2.2204460492503131e-14 -1.1990408665951691e-14 -5.3999999999999835];  % in
+smiData.RigidTransform(20).angle = 6.8156139528687708e-16;  % rad
+smiData.RigidTransform(20).axis = [-0.4909251464368074 0.87120175653863274 -1.4575014932904035e-16];
+
+smiData.RigidTransform(21).translation = [6.9999999999999902 -30.630000000000013 0.37500000000001771];  % in
+smiData.RigidTransform(21).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(21).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(22).translation = [-2.2999999999999829 0.12500000000002043 -2.1498636836303597];  % in
+smiData.RigidTransform(22).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(22).axis = [0.57735026918962573 0.57735026918962573 0.57735026918962584];
+
+smiData.RigidTransform(23).translation = [1.3249999999999997 0.56466517216736622 0.22821106431309601];  % in
+smiData.RigidTransform(23).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(23).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(24).translation = [-1.4157212649395136e-14 -6.9388939039072284e-18 0.049999999999997158];  % in
+smiData.RigidTransform(24).angle = 3.1351612187264512e-17;  % rad
+smiData.RigidTransform(24).axis = [0.28504424735287393 -0.95851435933481643 -4.2829281298922897e-18];
+
+smiData.RigidTransform(25).translation = [4.0749999999999984 0.56466517216738366 0.22821106431309601];  % in
+smiData.RigidTransform(25).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(25).axis = [0.57735026918962584 0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(26).translation = [1.4157212649395128e-14 6.9388939039072284e-18 0.050000000000004263];  % in
+smiData.RigidTransform(26).angle = 4.3750684506783722e-16;  % rad
+smiData.RigidTransform(26).axis = [-0.99999514414487645 -0.0031163579171372118 6.8171064991021249e-19];
+
+smiData.RigidTransform(27).translation = [2.7000000000000033 -0.28599686504990318 -0.20119278406130153];  % in
+smiData.RigidTransform(27).angle = 2.1454902064553738;  % rad
+smiData.RigidTransform(27).axis = [-0.59342605745164534 -0.59342605745164523 -0.54377479591720079];
+
+smiData.RigidTransform(28).translation = [-9.9920072216264089e-16 -8.4376949871511897e-15 -0.56000000000000472];  % in
+smiData.RigidTransform(28).angle = 7.2241385414842567e-16;  % rad
+smiData.RigidTransform(28).axis = [0.99833331538596759 0.05771127611188441 2.0810969473276388e-17];
+smiData.RigidTransform(28).ID = 'F[Single_pulley_Clamp-1:-:CombinePulleypart-10]';
+
+smiData.RigidTransform(29).translation = [6.9999999999999902 39.630000000000017 0.37500000000001771];  % in
+smiData.RigidTransform(29).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(29).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(30).translation = [7.6999999999999833 0.12500000000000977 -2.149863683630346];  % in
+smiData.RigidTransform(30).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(30).axis = [-0.57735026918962562 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(31).translation = [1.3249999999999997 0.56466517216737488 0.22821106431307853];  % in
+smiData.RigidTransform(31).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(31).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(32).translation = [-1.1934897514720433e-15 -4.739264536368637e-15 0.050000000000004263];  % in
+smiData.RigidTransform(32).angle = 3.1401849173675503e-16;  % rad
+smiData.RigidTransform(32).axis = [0.932052072806554 -0.36232434858425727 -5.3022832517280841e-17];
+
+smiData.RigidTransform(33).translation = [4.0749999999999984 0.56466517216737488 0.22821106431307853];  % in
+smiData.RigidTransform(33).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(33).axis = [0.57735026918962584 0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(34).translation = [-7.5647777520528411e-16 -3.0151761912992524e-15 7.1054273576010019e-15];  % in
+smiData.RigidTransform(34).angle = 3.1415926535897931;  % rad
+smiData.RigidTransform(34).axis = [-1 -2.7920679407183497e-33 5.3357545827313071e-17];
+
+smiData.RigidTransform(35).translation = [2.7000000000000033 -0.28599686504989447 -0.20119278406131902];  % in
+smiData.RigidTransform(35).angle = 2.1454902064553738;  % rad
+smiData.RigidTransform(35).axis = [-0.59342605745164534 -0.59342605745164523 -0.54377479591720079];
+
+smiData.RigidTransform(36).translation = [1.4876988529977098e-14 7.2025718722557031e-15 -0.55999999999998185];  % in
+smiData.RigidTransform(36).angle = 1.0168534204683488e-15;  % rad
+smiData.RigidTransform(36).axis = [-0.99864334151466705 -0.052071839303214913 2.643879680744535e-17];
+
+smiData.RigidTransform(37).translation = [-3.500000000000008 -7.7600000000000007 0];  % in
+smiData.RigidTransform(37).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(37).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(38).translation = [7.9999999999999893 18.374555516981328 0.37500000000004319];  % in
+smiData.RigidTransform(38).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(38).axis = [-0.57735026918962562 -0.57735026918962506 -0.57735026918962662];
+
+smiData.RigidTransform(39).translation = [-3.4999999999999991 3.4999999999999991 -10];  % in
+smiData.RigidTransform(39).angle = 0;  % rad
+smiData.RigidTransform(39).axis = [0 0 0];
+
+smiData.RigidTransform(40).translation = [-6.1250000000000036 6.2000000000000171 42.900338762213096];  % in
+smiData.RigidTransform(40).angle = 3.1415926535897931;  % rad
+smiData.RigidTransform(40).axis = [0.70710678118654746 -0.70710678118654757 0];
+
+smiData.RigidTransform(41).translation = [1.3499999999999974 0.2499999999999987 -0.25000000000000305];  % in
+smiData.RigidTransform(41).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(41).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(42).translation = [3.4416913763379853e-15 6.2311267257086911e-15 -0.25000000000000006];  % in
+smiData.RigidTransform(42).angle = 1.7101692394521916e-16;  % rad
+smiData.RigidTransform(42).axis = [0.88705717631307812 -0.46165957799169349 -3.5017292096724045e-17];
+
+smiData.RigidTransform(43).translation = [4.0500000000000007 0.2499999999999987 -0.25000000000000305];  % in
+smiData.RigidTransform(43).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(43).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(44).translation = [6.9944050551384862e-15 -1.1518563880485999e-15 -0.25];  % in
+smiData.RigidTransform(44).angle = 1.1969743598702138e-16;  % rad
+smiData.RigidTransform(44).axis = [-0.76235915487018502 -0.64715416941067228 2.9527197258180158e-17];
+
+smiData.RigidTransform(45).translation = [7.7156440888985172 -0.85890375839430988 1.1023340049217074];  % in
+smiData.RigidTransform(45).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(45).axis = [-0.57735026918962573 -0.57735026918962584 0.57735026918962573];
+
+smiData.RigidTransform(46).translation = [7.7156440888985189 6.8589037584191335 1.1023340049247401];  % in
+smiData.RigidTransform(46).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(46).axis = [-0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(47).translation = [7.7156440888985172 -0.85890375839431199 1.102334004921725];  % in
+smiData.RigidTransform(47).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(47).axis = [-0.57735026918962573 -0.57735026918962584 0.57735026918962573];
+
+smiData.RigidTransform(48).translation = [8.2156440888984967 0.39000000010475588 1.6000000000099952];  % in
+smiData.RigidTransform(48).angle = 2.0943951023931948;  % rad
+smiData.RigidTransform(48).axis = [-0.57735026918962651 -0.57735026918962551 0.57735026918962518];
+
+smiData.RigidTransform(49).translation = [0 8.5 89.36135000373126];  % in
+smiData.RigidTransform(49).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(49).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(50).translation = [30.092306595739402 66.146014449978622 125.84032063882809];  % in
+smiData.RigidTransform(50).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(50).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(51).translation = [0 3.0000000000000018 -4.8221286137437405];  % in
+smiData.RigidTransform(51).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(51).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(52).translation = [0 0.29999999999998295 0];  % in
+smiData.RigidTransform(52).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(52).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(53).translation = [0 -3.0000000000000018 -4.8221286137437405];  % in
+smiData.RigidTransform(53).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(53).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(54).translation = [0 -0.29999999999999716 0];  % in
+smiData.RigidTransform(54).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(54).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(55).translation = [-3.4999999999999991 3.4999999999999991 -10];  % in
+smiData.RigidTransform(55).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(55).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(56).translation = [-2.2204460492503131e-16 0.50000000000000011 -105];  % in
+smiData.RigidTransform(56).angle = 1.5707963267948966;  % rad
+smiData.RigidTransform(56).axis = [1.5700924586837749e-16 -1 1.5700924586837749e-16];
+
+smiData.RigidTransform(57).translation = [0 56.296014449978635 0];  % in
+smiData.RigidTransform(57).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(57).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(58).translation = [-17.984291700375586 1.3500000000000023 233.6081364751567];  % in
+smiData.RigidTransform(58).angle = 2.0943951023931944;  % rad
+smiData.RigidTransform(58).axis = [0.57735026918962551 -0.57735026918962629 0.57735026918962551];
+
+smiData.RigidTransform(59).translation = [4.3709567898628211e-15 8.5 -4.8221286137437538];  % in
+smiData.RigidTransform(59).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(59).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(60).translation = [2.0507704187857615e-14 -7.1499999999999844 1.9678100413648757e-14];  % in
+smiData.RigidTransform(60).angle = 2.0943951023931966;  % rad
+smiData.RigidTransform(60).axis = [-0.57735026918962606 -0.57735026918962573 -0.57735026918962562];
+
+smiData.RigidTransform(61).translation = [4.3709567898628211e-15 8.5 -4.8221286137437538];  % in
+smiData.RigidTransform(61).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(61).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(62).translation = [-2.0271540889017389e-14 -9.8499999999999943 1.9921300081350418e-14];  % in
+smiData.RigidTransform(62).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(62).axis = [-0.57735026918962584 -0.57735026918962518 -0.5773502691896264];
+
+smiData.RigidTransform(63).translation = [0 8.7419135797256423e-15 95.000000000000014];  % in
+smiData.RigidTransform(63).angle = 0;  % rad
+smiData.RigidTransform(63).axis = [0 0 0];
+
+smiData.RigidTransform(64).translation = [3.4999999999999836 4.000000000000008 1.8207657603852567e-14];  % in
+smiData.RigidTransform(64).angle = 1.570796326794897;  % rad
+smiData.RigidTransform(64).axis = [1.0312678283330698e-16 9.813077866773592e-17 1];
+
+smiData.RigidTransform(65).translation = [7.7156440888985172 -0.85890375839430988 1.1023340049217074];  % in
+smiData.RigidTransform(65).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(65).axis = [-0.57735026918962573 -0.57735026918962584 0.57735026918962573];
+
+smiData.RigidTransform(66).translation = [-2.2156440888985216 8.5000000001297717 0.37499999997150424];  % in
+smiData.RigidTransform(66).angle = 2.0943951023931962;  % rad
+smiData.RigidTransform(66).axis = [0.57735026918962573 0.57735026918962606 0.57735026918962551];
+
+smiData.RigidTransform(67).translation = [0 -0.29999999999999843 0];  % in
+smiData.RigidTransform(67).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(67).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(68).translation = [30.092306595739402 60.046014449978642 31.656842021353089];  % in
+smiData.RigidTransform(68).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(68).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
+
+smiData.RigidTransform(69).translation = [9.9399999999999977 0.39000000000000323 1.5999999999999917];  % in
+smiData.RigidTransform(69).angle = 2.0943951023931957;  % rad
+smiData.RigidTransform(69).axis = [-0.57735026918962573 -0.57735026918962584 0.57735026918962573];
+
+smiData.RigidTransform(70).translation = [-3.4399999999999942 6.8589037585169432 1.1023340049654604];  % in
+smiData.RigidTransform(70).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(70).axis = [0.57735026918962606 0.57735026918962584 0.57735026918962551];
+
+smiData.RigidTransform(71).translation = [0 0.2499999999999987 3.4967654318902569e-14];  % in
+smiData.RigidTransform(71).angle = 3.1415926535897931;  % rad
+smiData.RigidTransform(71).axis = [1 0 0];
+
+smiData.RigidTransform(72).translation = [-2.8750000000000044 2.7000000000000091 -1.6893361973378411];  % in
+smiData.RigidTransform(72).angle = 1.5707963267948963;  % rad
+smiData.RigidTransform(72).axis = [-6.6728929494060456e-16 -5.9859774987318934e-16 -1];
+
+smiData.RigidTransform(73).translation = [2.7000000000000033 0.75000000000000044 -0.24999999999997685];  % in
+smiData.RigidTransform(73).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(73).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
+
+smiData.RigidTransform(74).translation = [7.1054273576010019e-15 -3.3140157285060923e-14 1.0000000000000029];  % in
+smiData.RigidTransform(74).angle = 3.1415926535897931;  % rad
+smiData.RigidTransform(74).axis = [-1 -5.4236885678319583e-33 9.7136875754265676e-17];
+
+smiData.RigidTransform(75).translation = [30.092306595739402 57.646014449978622 36.478970635096829];  % in
+smiData.RigidTransform(75).angle = 0;  % rad
+smiData.RigidTransform(75).axis = [0 0 0];
